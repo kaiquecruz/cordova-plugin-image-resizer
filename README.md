@@ -35,16 +35,15 @@ At the moment the plugin is available on android, iOS and windows
   - **base64**(Boolean): Whether or not to return a base64 encoded image string instead of the path to the resized image
   - **fit**(Boolean): Whether or not to fit image in bounds defined by width and height **android only**
 
-### Android Example
+### iOS Example
 ```
     var options = {
           uri: uri,
-          folderName: "Protonet Messenger",
+          fileName: "image.jpg",
           quality: 90,
           width: 1280,
           height: 1280,
-          base64: true,
-          fit: false
+          base64: false
     };
 
     window.ImageResizer.resize(options,
